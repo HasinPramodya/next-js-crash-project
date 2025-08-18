@@ -1,3 +1,5 @@
+import {notFound} from "next/navigation";
+
 async function fetchUser(id: string) {
     const res = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`);
     if (!res.ok) {
