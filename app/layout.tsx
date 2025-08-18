@@ -37,6 +37,9 @@ export default function RootLayout({
 
         </div>
         {children}
+            <p className="text-sm text-gray-600">
+                © {new Date().getFullYear()} Hasin’s App. All rights reserved.
+            </p>
       </body>
     </html>
   );
